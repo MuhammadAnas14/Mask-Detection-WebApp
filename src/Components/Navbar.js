@@ -71,13 +71,12 @@ const Head = () => {
             }}
             fluid
           />
-          <h1>dwd</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="NavSpace">
           <Nav className="mr-auto ">
             {/* <Nav.Link href="/home">home</Nav.Link> */}
-            <Nav.Link href="/Dashboard">Dashboard</Nav.Link>
+            <Nav.Link href="/detection">Detection</Nav.Link>
             <Nav.Link href="/Visualization">Visualization</Nav.Link>
             <Nav.Link href="/Prediction">Prediction</Nav.Link>
             {authButton}

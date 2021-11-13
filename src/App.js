@@ -4,6 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Login from "./Components/Login";
 import Layout from "./Components/Layout";
+import Detection from './Components/detection'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Layout>
         <Routes>
           <Route  path="/" element={<Login/>}></Route>
+          <Route  path="/detection" element={<Detection/>}></Route>
         </Routes>
       </Layout>
     </Router>
