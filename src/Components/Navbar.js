@@ -53,7 +53,7 @@ const Head = () => {
       expand="lg"
       style={{
         transition: "0.7s ease-in-out",
-        backgroundColor: navBackground ? "#A74850" : "transparent",
+        backgroundColor: navBackground ? "rgb(254, 252, 232)" : "transparent",
         opacity: navOpacity ? 0.85 : 1,
         height: 90,
         boxShadow: navShadow
@@ -78,7 +78,7 @@ const Head = () => {
             {/* <Nav.Link href="/home">home</Nav.Link> */}
             <Nav.Link href="/detection">Detection</Nav.Link>
             <Nav.Link href="/Visualization">Visualization</Nav.Link>
-            <Nav.Link href="/Prediction">Prediction</Nav.Link>
+            <Nav.Link href="/Prediction">About</Nav.Link>
             {authButton}
           </Nav>
         </Navbar.Collapse>

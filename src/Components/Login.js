@@ -14,7 +14,8 @@ import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Lock from '@material-ui/icons/Lock';
 import Mail from '@material-ui/icons/Mail';
-import Logo from '../Assets/default-monochrome.svg'
+import {useNavigate} from 'react-router-dom';
+
 
 
 const theme = createTheme({
@@ -54,6 +55,13 @@ const useStyles = makeStyles((theme) => ({
 const  SignIn  = () => {
   const classes = useStyles();
 
+  let history = useNavigate();
+
+
+  const submithandler =() =>{ 
+    history('/detection')
+  }
+
   return (
     <MuiThemeProvider theme={theme}>
     <Container component="main" maxWidth="sm">
@@ -78,7 +86,7 @@ const  SignIn  = () => {
             Sign into your account
           </Box>
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} noValidate onSubmit={submithandler}>
           <Grid 
               container
               direction="row"
