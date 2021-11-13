@@ -1,0 +1,43 @@
+.NavSpace {
+    justify-content: flex-end !important;
+    /* margin-top: -500px; */
+    margin-right: -70px;
+    /* margin-left: 330px; */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    /* color: #cfc6c6;s */
+    padding: 6px 30px;
+    /* font-weight: bold; */
+    /* font-family: roboto; */
+    border-radius: 68px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    /* or 27px */
+  
+    color: #ffffff !important;
+  }
+  
+  .navbar-light .navbar-brand {
+    color: white !important;
+  }
+  
+  /* .navbar-light {
+    background-color: #014358 !important;
+  } */
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    /* text-transform: uppercase; */
+    background-color: #e25763;
+    color: white !important;
+    /* font-weight: bold; */
+  }
+  
+  .shadowed {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
