@@ -15,11 +15,11 @@
     border-radius: 68px;
     font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 150%;
     /* or 27px */
   
-    color: #ffffff !important;
+    color: #183a1d !important;
   }
   
   .navbar-light .navbar-brand {
@@ -32,12 +32,14 @@
   
   .navbar-light .navbar-nav .nav-link:hover {
     /* text-transform: uppercase; */
-    background-color: #e25763;
-    color: white !important;
+    background-color: #e1eedd;
+    color:#183a1d !important;
     /* font-weight: bold; */
   }
   
   .shadowed {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+    /* filter: drop-shadow(5px 5px 5px #222); */
+    margin-top: 50px;
+    width: 300px;
   }

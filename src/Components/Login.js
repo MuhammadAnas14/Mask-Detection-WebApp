@@ -19,8 +19,8 @@ import Logo from '../Assets/default-monochrome.svg'
 
 const theme = createTheme({
   palette:{
-    primary:{main: '#F5B62A'},
-    secondary:{main:'#383938'},
+    primary:{main: '#f6c453'},
+    secondary:{main:'#183a1d'},
   }
 });
 

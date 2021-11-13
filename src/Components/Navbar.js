@@ -1,7 +1,8 @@
 import React from "react";
 import { Nav, Navbar, Container, Image } from "react-bootstrap";
 import "./CSS/layout.css";
-import Logo from "../Assets/logo.png";
+import Logo from "../Assets/logo2.png";
+// import Logo from "../Assets/default-monochrome.svg"
 import { useState, useRef, useEffect } from "react";
 
 const Head = () => {
@@ -64,11 +65,13 @@ const Head = () => {
         <Navbar.Brand href="/" style={{ position: "absolute", left: 100 }}>
           <Image
             src={Logo}
-            // className="shadowed"
+            className="shadowed"
             style={{
               backgroundColor: navBackground ? "transparent" : "#025469",
             }}
+            fluid
           />
+          <h1>dwd</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="NavSpace">
