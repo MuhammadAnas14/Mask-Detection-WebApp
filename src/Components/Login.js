@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -50,17 +50,60 @@ const useStyles = makeStyles((theme) => ({
   signup: {
     margin: theme.spacing(-2, 0, 2),
   },
+  error: {
+    color: "red",
+    fontSize:10,
+  }
 }));
 
 const  SignIn  = () => {
-  const classes = useStyles();
 
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+  const [errortext, setErrortext] = useState('');
+
+
+  let users = [
+
+    {
+      email:"admin@gmail.com",
+      password:"admin"
+    },
+    {
+      email: "user1@gmail.com",
+      password: "user123"
+    }
+  ]
   let history = useNavigate();
 
+  const loginSubmit = (event) => {
+    event.preventDefault();
 
-  const submithandler =() =>{ 
-    history('/detection')
-  }
+    let data = {
+      email: email,
+      password: password,
+    };
+
+    for(let i=0;i<users.length;i++){
+
+
+      
+      if(data.email === users[i].email && data.password === users[i].password){
+        history('/detection')
+        break
+      }
+      else{
+        setErrortext("Invalid Credential")
+      }
+    }
+
+    
+
+  };
+  const classes = useStyles();
+
+
+
 
   return (
     <MuiThemeProvider theme={theme}>
@@ -86,7 +129,12 @@ const  SignIn  = () => {
             Sign into your account
           </Box>
         </Typography>
-        <form className={classes.form} noValidate onSubmit={submithandler}>
+        {errortext != '' ? (
+              <p className={classes.error}>
+                {errortext}
+              </p>
+            ) : null}
+        <form className={classes.form} noValidate onSubmit={loginSubmit}>
           <Grid 
               container
               direction="row"
@@ -105,6 +153,7 @@ const  SignIn  = () => {
                 name="email"
                 autoComplete="email"
                 autoFocus
+                onChange={(ev) => setemail(ev.target.value)}
                 InputProps={{
                   startAdornment: <InputAdornment position="start"><Mail color="disabled"/></InputAdornment>,
                 }}
@@ -121,6 +170,7 @@ const  SignIn  = () => {
               label="Password"
               type="password"
               id="password"
+              onChange={(ev) => setpassword(ev.target.value)}
               autoComplete="current-password"
               InputProps={{
                 startAdornment: <InputAdornment position="start"><Lock color="disabled" /></InputAdornment>,
