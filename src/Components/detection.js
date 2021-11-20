@@ -9,6 +9,12 @@ const Cam = () => {
   const videoShowHandler = () => {
 
     
+    setvideoShown(<Image src="http://192.168.0.112:5050/video_feed" alt="Video" fluid />)
+  };
+
+  const videoShowHandler2 = () => {
+
+    
     setvideoShown(<Image src="http://192.168.0.112:5050/video_feed2" alt="Video" fluid />)
   };
 
@@ -24,7 +30,7 @@ const Cam = () => {
           <Button value="1" className="btnn-v" onClick={videoShowHandler}>
             Mask Detection
           </Button>
-          <Button value="2" className="btnn-v" onClick={videoShowHandler}>
+          <Button value="2" className="btnn-v" onClick={videoShowHandler2}>
             SOP's Detection
           </Button>
         </div>
