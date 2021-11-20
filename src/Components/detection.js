@@ -9,7 +9,7 @@ const Cam = () => {
   const videoShowHandler = () => {
 
     
-    setvideoShown(<Image src="http://192.168.0.112:5050/video_feed" alt="Video" fluid />)
+    setvideoShown(<Image src="http://192.168.0.112:5050/video_feed2" alt="Video" fluid />)
   };
 
   console.log("Sss",videoShown)

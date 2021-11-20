@@ -6,7 +6,9 @@ from pymongo import MongoClient
 from flask_cors import CORS
 CORS(app)
 from video import VideoCamera
-from facemask import videoCapture
+from video2 import VideoCamera2
+
+
 
 
 
@@ -31,6 +33,14 @@ def Gettingstarted():
 def video_feed():
     return Response(gen(VideoCamera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
+@app.route('/video_feed2')
+def video_feed2():
+    return Response(gen(VideoCamera2()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5050, threaded=True, use_reloader=False)
         # app.run(debug=True, port = 5050)

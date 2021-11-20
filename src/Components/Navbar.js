@@ -77,8 +77,6 @@ const Head = () => {
           <Nav className="mr-auto ">
             {/* <Nav.Link href="/home">home</Nav.Link> */}
             <Nav.Link href="/detection">Detection</Nav.Link>
-            <Nav.Link href="/Visualization">Visualization</Nav.Link>
-            <Nav.Link href="/Prediction">About</Nav.Link>
             {authButton}
           </Nav>
         </Navbar.Collapse>
