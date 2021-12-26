@@ -11,7 +11,7 @@ import os
 import time
 import schedule
 
-video_path = "/home/anas/Desktop/Freelancing/mask-detection-webbapp/backend/vid_short.mp4"
+video_path = "/home/anas/Desktop/Freelancing/Mask-Detection-WebApp/backend/vid_short.mp4"
 
 
 

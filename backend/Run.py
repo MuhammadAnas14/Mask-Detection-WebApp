@@ -6,7 +6,7 @@ from scipy.spatial import distance as dist
 import numpy as np
 import argparse, imutils, cv2, os, time, schedule
 
-video_path = "/home/anas/Desktop/Freelancing/mask-detection-webbapp/backend/vid_short.mp4"
+video_path = "/home/anas/Desktop/Freelancing/Mask-Detection-WebApp/backend/vid_short.mp4"
 
 
 ap = argparse.ArgumentParser()

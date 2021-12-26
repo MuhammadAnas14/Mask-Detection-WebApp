@@ -7,6 +7,7 @@ from flask_cors import CORS
 CORS(app)
 from video import VideoCamera
 from video2 import VideoCamera2
+from video3 import VideoCamera3
 
 
 
@@ -31,7 +32,7 @@ def Gettingstarted():
 
 @app.route('/video_feed')
 def video_feed():
-    return Response(gen(VideoCamera()),
+    return Response(gen(VideoCamera3()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 

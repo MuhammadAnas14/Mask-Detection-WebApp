@@ -14,7 +14,7 @@ import datetime
 mymodel=load_model('mymodel.h5')
 
 
-video_path = "/home/anas/Desktop/Freelancing/mask-detection-webbapp/backend/mask.mp4"
+video_path = "/home/anas/Desktop/Freelancing/Mask-Detection-WebApp/backend/mask.mp4"
 
 class VideoCamera(object):
     def __init__(self):
