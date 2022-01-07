@@ -41,6 +41,12 @@ def video_feed2():
     return Response(gen(VideoCamera2()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/video_feed3')
+def video_feed2():
+    return Response(gen(VideoCamera2()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5050, threaded=True, use_reloader=False)
