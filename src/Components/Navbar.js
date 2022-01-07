@@ -8,6 +8,7 @@ import { useState, useRef, useEffect } from "react";
 const Head = () => {
   let authButton;
   let user = localStorage.getItem("user");
+  console.log(user)
 
   const handlelogout = () => {
     localStorage.clear("user");
@@ -15,12 +16,12 @@ const Head = () => {
 
   if (user) {
     authButton = (
-      <Nav.Link href="/Login" onClick={handlelogout}>
+      <Nav.Link href="/" onClick={handlelogout}>
         Logout
       </Nav.Link>
     );
   } else {
-    authButton = <Nav.Link href="/login">Login</Nav.Link>;
+    authButton = <Nav.Link href="/">Logout</Nav.Link>;
   }
 
   const [navBackground, setNavBackground] = useState(false);

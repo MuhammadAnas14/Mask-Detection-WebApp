@@ -14,14 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
 
-          <Route
-            path="/detection"
-            element={
-              <SecuredRoute redirectTo="/">
-                <Detection />
-              </SecuredRoute>
-            }
-          />
+          <Route path="/detection" element={<Detection />} />
         </Routes>
       </Layout>
     </Router>

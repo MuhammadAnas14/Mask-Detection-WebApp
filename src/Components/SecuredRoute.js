@@ -5,7 +5,7 @@ import authentication from './auth';
 function SecuredRoute({props,redirectTo}) {
 
       let data = authentication.getLogInStatus()
-      return data ? <props.component {...data}></props.component> : <Navigate to={redirectTo} />;
+      return data ? props : <Navigate to={redirectTo} />;
 
 }
 

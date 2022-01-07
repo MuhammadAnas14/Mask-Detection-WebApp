@@ -2,7 +2,7 @@ const authentication = {
     isLoggedIn: false,
   
     onAuthentication() {
-      this.isLoggedIn = true;
+        localStorage.setItem('user',this.isLoggedIn)
     },
     getLogInStatus() {
       return this.isLoggedIn;
