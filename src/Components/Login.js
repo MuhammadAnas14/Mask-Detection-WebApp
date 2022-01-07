@@ -15,6 +15,7 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import Lock from '@material-ui/icons/Lock';
 import Mail from '@material-ui/icons/Mail';
 import {useNavigate} from 'react-router-dom';
+import authentication from './auth';
 
 
 
@@ -89,6 +90,7 @@ const  SignIn  = () => {
 
       
       if(data.email === users[i].email && data.password === users[i].password){
+        authentication.onAuthentication();
         history('/detection')
         break
       }
