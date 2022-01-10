@@ -16,6 +16,7 @@ import Lock from '@material-ui/icons/Lock';
 import Mail from '@material-ui/icons/Mail';
 import {useNavigate} from 'react-router-dom';
 import authentication from './auth';
+import './CSS/layout.css'
 
 
 
@@ -127,7 +128,7 @@ const  SignIn  = () => {
           </Box>
         </Typography>
         <Typography component="div">
-          <Box color = "black"fontSize={16} m={1} paddingT>
+          <Box color = "black"fontSize={16}  m={1} paddingT>
             Sign into your account
           </Box>
         </Typography>
@@ -204,29 +205,6 @@ const  SignIn  = () => {
               <Link href="#" variant="body2" color="secondary" >
                 Forgot your password?
               </Link>
-            </Grid>
-
-            <Grid item xs={9}>  
-              <Typography component="div">
-                <Box fontSize={10} m={3} paddingT>
-                  <Link href="#" color="secondary" >
-                        YOU DO NOT HAVE AN ACCOUNT?
-                  </Link>
-                </Box>
-              </Typography>
-            </Grid>
-
-            <Grid item xs={9}>
-              <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.signup}
-              m={-1}
-              >
-              SIGN UP
-              </Button>
             </Grid>
 
           </Grid>
