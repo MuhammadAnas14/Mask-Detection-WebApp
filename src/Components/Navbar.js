@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar, Container, Image } from "react-bootstrap";
 import "./CSS/layout.css";
-import Logo from "../Assets/logo2.png";
+import Logo from "../Assets/cover.png";
 // import Logo from "../Assets/default-monochrome.svg"
 import { useState, useRef, useEffect } from "react";
 

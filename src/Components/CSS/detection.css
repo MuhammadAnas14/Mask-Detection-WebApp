@@ -45,6 +45,13 @@
   box-shadow: none;
 }
 
+.box-shown{
+  border: solid rgba(0, 59, 27, 0.9) 1px;
+  border-radius: 10px;
+  width: 600px;
+  height: 300px;
+}
+
 @media only screen and (max-width: 600px) {
     .menu{
         flex-direction: column;

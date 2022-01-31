@@ -1,10 +1,14 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { Container, Image, Button } from "react-bootstrap";
 import "./CSS/detection.css";
 
 const Cam = () => {
 
   const [videoShown, setvideoShown] = useState("")
+
+  useEffect (() => {
+    setvideoShown(<div className="box-shown"></div>)
+  },[])
 
   const videoShowHandler = () => {
 
